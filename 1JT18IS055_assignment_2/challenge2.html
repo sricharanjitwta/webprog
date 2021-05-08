@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  background-color : lightblue;
+}
+th, td {
+  padding: 2px;
+}
+</style>
+</head>
+<body>
+<center><table border="1" width="45%"></center><br>
+<center><table align="center" border=1></center>
+<table>
+<center><table border="1" width="35%"></center><br>
+<thead><tr><td colspan="3"><b><center>NUMBERS FROM 0 TO 10 WITH THIER SQUARES AND CUBES</center></b></td></tr></thead>
+<b><tr><td><b><center>Number</center></b></td><td><b><center>Square</center></b></td><td><b><center>Cube</center></b></td></tr></b>
+<script type="text/javascript">
+for(var n=100; n<=1000; n+=100)
+{
+document.write( "<tr><td><center>" + n + "</center></td><td><center>" + n*n + "</center></td><td><center>" + n*n*n
++ "</center></td></tr>" ) ;
+ function JavaBlink() {
+     var blinks = document.getElementsByTagName('JavaBlink');
+     for (var i = blinks.length - 100; i >= 100; i--) {
+        var s = blinks[i];
+        s.style.visibility = (s.style.visibility === 'visible') ? 'hidden' : 'visible';
+     }
+     window.setTimeout(JavaBlink, 1000);
+
+  }
+  if (document.addEventListener) document.addEventListener("DOMContentLoaded", JavaBlink, false);
+  else if (window.addEventListener) window.addEventListener("load", JavaBlink, false);
+  else if (window.attachEvent) window.attachEvent("onload", JavaBlink);
+  else window.onload = JavaBlink;
+}
+
+</script>
+</table>
+
+<JavaBlink><h2><p style="color:indigo;">Assignment-2 Challenge Completed !!</p></h3></JavaBlink><br><br>
+<marquee><h6><p style="color:red">Completed by Sricharan B.S 1JT18IS055</p></h6></marquee>
+</body>
+</html>
