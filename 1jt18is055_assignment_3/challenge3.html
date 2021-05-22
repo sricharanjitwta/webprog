@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>challenge3</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-size: 18px;
+    }
+
+    header {
+      margin: 0;
+    }
+    .main {
+      position: relative;
+      margin-left: 1%;
+    }
+
+    .main img {
+      margin-left: 3%;
+      height: 300px;
+      width: auto;
+    }
+  #demo {
+position: absolute;
+  margin-left:60%;
+padding-bottom:250px;
+  transform: translate(-50%, -50%);
+  }
+
+    footer {
+      background:orange;
+    }
+    footer p {
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a href="#home">Home</a>|
+    <a href="#places">Places</a>|
+    <a href="#gallery">Gallery</a>|
+    <a href="#aboutus">AboutUs</a>|
+    <a href="#search">Search</a>
+  </header>
+  <br>
+  <section class="main">
+    <h1><strong><a href = "https://en.wikipedia.org/wiki/Pulp_Fiction"> PULP FICTION </a> </h1></strong></br>
+    <h6>       <tab> -Directed By <a href = "https://en.wikipedia.org/wiki/Quentin_Tarantino">Quentin Tarantino</a></h6>
+    <br>
+    <img src="maxresdefault.jpg" alt="Pulp Fiction">
+
+
+
+<p id="demo"></p>
+
+
+
+    <br><br>
+    <p>by <a href="#">By Sricharan B.S (1JT18IS055)</a> </p>
+    <br>
+    <p>
+      Pulp Fiction is a 1994 American neo-noir black comedy crime film written and directed by Quentin Tarantino, who conceived it with Roger Avary.
+      Starring John Travolta, Samuel L. Jackson, Bruce Willis, Tim Roth, Ving Rhames, and Uma Thurman, it tells several stories of criminal Los Angeles. 
+      The title refers to the pulp magazines and hardboiled crime novels popular during the mid-20th century, known for their graphic violence and punchy dialogue.
+    </p>
+    <br>
+    <p><i>Year</i> : 1994</p>
+    <p><i>Date</i> : 14th October </p>
+    <br>
+    <br>
+    <h2>Reviews</h2>
+    <br>
+    <p style="font-weight:bold; font-size:20px">My Favourite Movie</p>
+    <table>
+      <tr>
+        <td> Steve</td>
+        <td> ⭐⭐⭐⭐ </td>
+      </tr>
+    </table><br>
+    <p>Pulp Fiction is the most original, rule breaking film I have ever seen.</p>
+    <br>
+    <hr>
+    <br>
+
+    <p style="font-weight:bold; font-size:20px">A masterpiece of screenwriting </p>
+    <table>
+      <tr>
+        <td>Micheal </td>
+        <td> ⭐⭐⭐⭐⭐ </td>
+      </tr>
+    </table><br>
+    <p>This is Tarantino's masterpiece, there's no other way to say it. It has arguably one of the smartest scripts I've ever seen. The story, which is non-linear, is so well constructed it takes several viewings to grasp it all.</p>
+    <br>
+    <hr><br>
+
+    <p style="font-weight:bold; font-size:20px">The rebirth of a genre – and film history </p>
+    <table>
+      <tr>
+        <td>Jessie</td>
+        <td> ⭐⭐⭐⭐⭐ </td>
+      </tr>
+    </table><br>
+    <p>This if you have not already.
+
+It is violent, action-packed and sexy.
+
+Watch it again if you have already. It is just too much fun to watch once.</p>
+  </section>
+  <br>
+  <section class="ending">
+    <a href="#home">Home</a>
+    <a href="#places">Places</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#aboutus">AboutUs</a>
+    <a href="#search">Search</a>
+  </section>
+
+  <footer>
+    <p><i>Copyright @ <a href="https://en.wikipedia.org/wiki/Miramax">MIRAMAX FILMS</a></i></p>
+  </footer>
+  <br><br>
+    <script>
+      var var1 = setInterval(inTimer, 500);
+      var fs = 2; //font size
+      var ids = document.getElementById("demo");
+      function inTimer()
+      {
+      ids.innerHTML = 'The 666 briefcase';
+      ids.setAttribute('style', "font-size: " + fs + "px; color:orange; font-weight:bold");
+      fs += 2;
+      if (fs >= 40)
+      {
+      clearInterval(var1); //paused
+      var2 = setInterval(deTimer, 500);
+
+      }
+      }
+      function deTimer() 
+      {
+      fs -= 2;
+      ids.innerHTML = 'The Bonnie Situation';
+      ids.setAttribute('style', "font-size: " + fs + "px; color:red");
+      if (fs == 4)
+      {
+      clearInterval(var2); //paused
+      var1 = setInterval(inTimer, 500);
+      }
+      }
+</script>
+</body>
+
+</html>
